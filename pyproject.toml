@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "revertvla"
+version = "0.1.0"
+description = "Pre-close verification and executed-action rollback for vision-language-action policies"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["Reverse"]
+exclude = ["Reverse.vendor*", "Reverse.runtime*", "Reverse.tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["Reverse/tests", "tests"]
+addopts = "-ra"

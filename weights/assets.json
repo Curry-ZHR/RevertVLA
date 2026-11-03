@@ -1,0 +1,27 @@
+{
+  "release": "v0.1.0",
+  "format": "Independent gzip tar archives; restore all three into the checkout.",
+  "assets": [
+    {
+      "name": "siglip362-part01.tar.gz",
+      "bytes": 1033905680,
+      "sha256": "95d445d1ddc743d4868be841315f8995b872d5e8c4bc7b38e42c3d50f39dbec9",
+      "url": "https://github.com/Curry-ZHR/RevertVLA/releases/download/v0.1.0/siglip362-part01.tar.gz",
+      "files": 1243
+    },
+    {
+      "name": "siglip362-part02.tar.gz",
+      "bytes": 1033478955,
+      "sha256": "c4d04298f0176f51504b87a48c8da5179deeff6b219e5a3a163f16f1d8b9cb11",
+      "url": "https://github.com/Curry-ZHR/RevertVLA/releases/download/v0.1.0/siglip362-part02.tar.gz",
+      "files": 1242
+    },
+    {
+      "name": "yolo71-v42.tar.gz",
+      "bytes": 56825696,
+      "sha256": "675677061a4596718f3048704a77a0a5525e4782039391f02bbbd59ce8a3c88b",
+      "url": "https://github.com/Curry-ZHR/RevertVLA/releases/download/v0.1.0/yolo71-v42.tar.gz",
+      "files": 1
+    }
+  ]
+}

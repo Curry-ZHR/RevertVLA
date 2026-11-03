@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "base_weights_sha256": "720cbd8a2b56674b65cb75b3cbc64175be26b55f7690d2620042e9e51ad3a866",
+  "class_box_scale": {
+    "7": 0.96,
+    "9": 1.12
+  },
+  "class_camera_geometry": {
+    "1:head": {
+      "scale_x": 0.99894967,
+      "scale_y": 0.9718351,
+      "shift_x_widths": 0.0003568,
+      "shift_y_heights": -0.01355171
+    },
+    "22:left": {
+      "scale_x": 0.920487,
+      "scale_y": 0.917601,
+      "shift_x_widths": 0.03967325,
+      "shift_y_heights": -0.01036
+    },
+    "22:right": {
+      "scale_x": 0.97291099,
+      "scale_y": 0.99855739,
+      "shift_x_widths": 0.00366612,
+      "shift_y_heights": 0.03523503
+    }
+  },
+  "order": [
+    "class_box_scale",
+    "class_camera_geometry"
+  ],
+  "applied_after_nms": true,
+  "clip_to_image": true,
+  "development_only": true
+}

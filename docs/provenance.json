@@ -1,0 +1,141 @@
+{
+  "release": "v0.1.0",
+  "source_tag": "v2.16.5",
+  "source_commit": "fdf58c4ffe15d196978e3c071ed41b150febfa5c",
+  "core_files_unchanged": [
+    {
+      "path": "Reverse/core.py",
+      "sha256": "f9a117c85e34e9ec6cbb3d186949b0263ca813da17fa3e471cfb366201616d0b"
+    },
+    {
+      "path": "Reverse/gate_policy.py",
+      "sha256": "e1e0a371e03beaa6900eaa2e689409d3ae788a7dacc8388b6357f4906a357b04"
+    },
+    {
+      "path": "Reverse/rolling_gate.py",
+      "sha256": "3cdfd4705a8ac45c50fc9a528320eee49dc9467f2b1f680e0ab8aef4fe6646be"
+    },
+    {
+      "path": "Reverse/integration.py",
+      "sha256": "405e2ce30aeff6ef193319e50c5ae93a95b547b1d9f52e833ae02f2042b848b3"
+    },
+    {
+      "path": "Reverse/runtime.py",
+      "sha256": "7079e026d6d6f718c3de8b0afe93b0c6bd6611cc90479c71acf95c03691a721e"
+    },
+    {
+      "path": "Reverse/model_worker.py",
+      "sha256": "50e98c63140a64f04070735b605f773966a80edf68a0d35b828661c5270eb7fc"
+    },
+    {
+      "path": "Reverse/siglip_delivery.py",
+      "sha256": "8c910389767af02c7f5ac5f51b6f99919402752dff0ef01bb278a743ed2b4f9a"
+    },
+    {
+      "path": "Reverse/siglip_scorer.py",
+      "sha256": "ac130b8470cc034b80b616221747ccb9e16419db146c6d4926e52d283d86f493"
+    },
+    {
+      "path": "Reverse/yolo_delivery.py",
+      "sha256": "4265ff02413ab9d3a0e77efe0541341b229e159988a79000088bb9cf052fd8ea"
+    }
+  ],
+  "checkpoint_step": 362,
+  "checkpoint_files": 2484,
+  "checkpoint_bytes": 2066163854,
+  "checkpoint_tensor_fingerprint": "99f030e1847d819830a004614d97df6eacdc0692d6e359761a0776798830f0af",
+  "original_training_copy_compared": true,
+  "packaging_changes": [
+    "Portable setup/configuration wrappers replace host-specific launch specification.",
+    "Dataset/pretraining/tokenizer path strings normalized in config.json; its manifest entry updated. Model tensors unchanged.",
+    "Legacy inference helper default tokenizer path made relative; scorer still supplies explicit tokenizer.",
+    "Original pure core regressions retained; executor contract and installer tests added without Robot Station dependency.",
+    "Ultralytics installed from pinned requirement; original Big Vision snapshot and Apache license retained.",
+    "Whole Robot Station backend/executor and experimental ROI code are external to this release.",
+    "YOLO evaluation metadata weight/postprocess paths normalized; reported metric values unchanged.",
+    "Delivery checker reports the independently verified training-copy comparison recorded in the manifest.",
+    "Big Vision restricted to the unchanged inference import closure plus upstream license; private training scripts and dataset reports excluded."
+  ],
+  "validation": {
+    "offline_tests": 37,
+    "subtests": 2,
+    "example": "passed",
+    "python_syntax": "passed",
+    "shell_syntax": "passed",
+    "gpu_models_loaded_during_packaging": false,
+    "robot_commands_sent": false,
+    "local_checkpoint_full_hash_check": "passed",
+    "linux_python312_dependency_resolution": "both environments resolved",
+    "release_asset_restore": "all three local archives verified and restored"
+  },
+  "vendor_inference_files": [
+    {
+      "path": "Reverse/vendor/big_vision/LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/datasets/imagenet/class_names.py",
+      "sha256": "314a107b4fe15bc163030517d1191d8e6eef4d474fbaf09472323ced989cd46a"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/models/common.py",
+      "sha256": "b2110592f79bbba411c9a55470ab08047d381e2419e290c83103bae0056e9f87"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/models/proj/image_text/text_transformer.py",
+      "sha256": "7389026623006969916ff78094e4dbd7a774897751e4e9c1912c2a9e9c0b32ae"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/models/proj/image_text/two_towers.py",
+      "sha256": "c09e10c8b01939707a887f1736bc3bfc667aaa603132f9b559277555382f9bdc"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/models/vit.py",
+      "sha256": "d4fc67ba20bbbacfdc9e33a357e0e8b472ba7ac66949604ce48a59d510380ca9"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/builder.py",
+      "sha256": "e99f7f906646e8f7a0e9c34a53bef8c0bfc9c23e420d762ca40d118a56c7bb4e"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/ops_general.py",
+      "sha256": "dfd5c05cd08de6dbccb1bd4465a0a422342648128fb1b46d3018f2feae9afe50"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/ops_image.py",
+      "sha256": "2fa5b0c4373a9910cc48d33d83d23a6f846a6599c39ed48c1bbc834351c7a710"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/ops_text.py",
+      "sha256": "b223cbf1c8bbe65459c348215dc35fb744f428a7777f8444f64054624462434b"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/registry.py",
+      "sha256": "657cdbeb52bc1d47b6a64163bc8149bb3f03c65c88ee71836dbe2d8674b406c2"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/tokenizer.py",
+      "sha256": "7bb61e4deacb98c8b6e6a62009043049315fa10b8a6c200ff1a5378aedd9cc8e"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/pp/utils.py",
+      "sha256": "89a843e6a8c6bf1de702077a9d1f806bc44269977fff8bf590c5e78010385db4"
+    },
+    {
+      "path": "Reverse/vendor/big_vision/big_vision/utils.py",
+      "sha256": "00e2cdb2f4f94b529f9bac19b12fef3f23d5ae1a269f3a06d53eedad81f3c0c4"
+    }
+  ]
+}

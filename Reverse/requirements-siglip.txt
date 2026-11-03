@@ -1,0 +1,14 @@
+jax[cuda12]==0.11.0
+flax==0.12.8
+optax==0.2.8
+tensorstore==0.1.85
+sentencepiece==0.2.2
+tensorflow==2.20.0
+tensorflow-text==2.20.1
+pillow==12.3.0
+ml-collections==1.1.0
+numpy==2.2.6
+clu==0.0.12
+einops
+psutil
+overrides

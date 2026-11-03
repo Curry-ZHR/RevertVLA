@@ -1,0 +1,60 @@
+{
+  "input": {
+    "data": {
+      "name": "from_data_dir",
+      "split": "train",
+      "data_dir": "datasets/zerith71_comparison/1.0.0"
+    },
+    "batch_size": 512,
+    "shuffle_buffer_size": 10000,
+    "num_parallel_calls": 16,
+    "prefetch": 2,
+    "pp": "decode|resize(224)|value_range(-1,1)|flatten|tokenize(max_len=64, model=\"Reverse/checkpoints/siglip/cc_en.32000.sentencepiece.model\", eos=\"sticky\", pad_value=1, inkey=\"captions/text\")|keep(\"image\", \"labels\", \"pair_label\")"
+  },
+  "pp_modules": [
+    "ops_general",
+    "ops_image",
+    "ops_text"
+  ],
+  "micro_batch_size": 4,
+  "gradient_accumulation_steps": 128,
+  "total_steps": 400,
+  "log_training_steps": 1,
+  "ckpt_start_steps": 30,
+  "ckpt_steps": 30,
+  "keep_ckpt_steps": 30,
+  "model_name": "proj.image_text.two_towers",
+  "model_init": "external_pretraining/webli_en_b16_224_63724782.npz",
+  "model": {
+    "image_model": "vit",
+    "text_model": "proj.image_text.text_transformer",
+    "image": {
+      "variant": "B/16",
+      "pool_type": "map"
+    },
+    "text": {
+      "variant": "B",
+      "vocab_size": 32000
+    },
+    "out_dim": [
+      null,
+      768
+    ],
+    "temperature_init": 10.0,
+    "bias_init": -10.0
+  },
+  "optax_name": "scale_by_adam",
+  "lr": 1e-05,
+  "wd": 0.0,
+  "grad_clip_norm": 1.0,
+  "schedule": [
+    [
+      ".*",
+      {
+        "decay_type": "cosine",
+        "warmup_steps": 40
+      }
+    ]
+  ],
+  "evals": {}
+}
