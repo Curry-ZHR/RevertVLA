@@ -1,5 +1,5 @@
 {
-  "release": "v0.1.0",
+  "release": "v0.1.1",
   "source_tag": "v2.16.5",
   "source_commit": "fdf58c4ffe15d196978e3c071ed41b150febfa5c",
   "core_files_unchanged": [
@@ -54,7 +54,8 @@
     "Whole Robot Station backend/executor and experimental ROI code are external to this release.",
     "YOLO evaluation metadata weight/postprocess paths normalized; reported metric values unchanged.",
     "Delivery checker reports the independently verified training-copy comparison recorded in the manifest.",
-    "Big Vision restricted to the unchanged inference import closure plus upstream license; private training scripts and dataset reports excluded."
+    "Big Vision restricted to the unchanged inference import closure plus upstream license; private training scripts and dataset reports excluded.",
+    "Release transfer changed from two ~1 GB SigLIP archives to 32 independently checksummed shards after long upload connections failed. Tensors and core behavior unchanged."
   ],
   "validation": {
     "offline_tests": 37,
@@ -66,7 +67,7 @@
     "robot_commands_sent": false,
     "local_checkpoint_full_hash_check": "passed",
     "linux_python312_dependency_resolution": "both environments resolved",
-    "release_asset_restore": "all three local archives verified and restored"
+    "release_asset_restore": "all 32 SigLIP shards and YOLO archive locally restored and individually verified"
   },
   "vendor_inference_files": [
     {

@@ -26,7 +26,7 @@ python -m pytest -q
 
 ## 下载权重并校验
 
-模型以 [GitHub Release](https://github.com/Curry-ZHR/RevertVLA/releases/tag/v0.1.0)
+模型以 [GitHub Release](https://github.com/Curry-ZHR/RevertVLA/releases/tag/v0.1.1)
 附件发布，代码仓库保存配置、类别表、后处理参数和哈希清单。
 
 ```bash

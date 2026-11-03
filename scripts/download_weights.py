@@ -69,7 +69,7 @@ def main():
         if not args.asset_dir and (not target.is_file() or digest(target) != asset["sha256"]):
             temporary = target.with_name(target.name + ".download")
             print(f"Downloading {asset['name']} ({asset['bytes']:,} bytes)", flush=True)
-            request = urllib.request.Request(asset["url"], headers={"User-Agent": "RevertVLA/0.1.0"})
+            request = urllib.request.Request(asset["url"], headers={"User-Agent": "RevertVLA/0.1.1"})
             with urllib.request.urlopen(request, timeout=120) as source, temporary.open("wb") as out:
                 shutil.copyfileobj(source, out, length=4 * 1024 * 1024)
             temporary.replace(target)

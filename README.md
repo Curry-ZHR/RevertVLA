@@ -2,7 +2,7 @@
 
 **Pre-close verification and executed-action rollback for vision-language-action policies.**
 
-[中文说明](README.zh-CN.md) · [Model downloads](https://github.com/Curry-ZHR/RevertVLA/releases/tag/v0.1.0) · [Integration guide](docs/integration.md)
+[中文说明](README.zh-CN.md) · [Model downloads](https://github.com/Curry-ZHR/RevertVLA/releases/tag/v0.1.1) · [Integration guide](docs/integration.md)
 
 RevertVLA checks the intended grasp target using wrist-camera SigLIP scores,
 holds a rejected close for a bounded observation window, replays the failing
